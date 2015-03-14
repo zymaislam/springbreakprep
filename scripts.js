@@ -19,7 +19,7 @@ var customText = {
 
 
 
-var defData = {};
+//var defData = {};
 
 // Load the Visualization API and the piechart package.
 google.load('visualization', '1.0', {
@@ -40,20 +40,23 @@ function drawChart() {
 	
 	var defaultDataArray = [];
 	
-	for(var i=0; i<defData.length; i++)
+	for(var i=0; i<defData.datapoints.length; i++){
+		console.log(defData.datapoints[i])
+		
+	}
 	
 	{
 		
 		var oneData = [];
-		oneData.push((new Date(defaultDataArray[i].date));
-		oneData.push(Number(defaultDataArray[i].value));
+		oneData.push(defaultDataArray.datapoints[i].date);
+		oneData.push(Number(defaultDataArray.datapoints[i].value));
 		defaultDataArray.push(oneData);
 	}
 
 	// Create the data table.
 	var data = new google.visualization.DataTable();
-	data.addColumn('string', 'Topping');
-	data.addColumn('number', 'Default index');
+	data.addColumn('date', 'Year');
+	data.addColumn('number', 'Percentage');
 	data.addRows(defaultDataArray);
 
 	// Set chart options
