@@ -22,5 +22,4 @@ I changed the font style of my non-existent data points.
 	opacity : 0.8 // The transparency of the text.
 
 
-The hAxis showing the date was changed to continuous from discrete so as to make it more customizable in case I want to use gridlines. 
-
+The hAxis showing the date was changed to continuous from discrete so as to make it more customizable in case I want to use gridlines. In doing so, while creating a variable I realized the difference between date, Date and DATE which was a very important lesson, since my JSON was in DATE, and the practice set we used in class was "date". 
