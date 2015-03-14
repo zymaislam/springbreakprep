@@ -5,7 +5,16 @@
 
 //creating a variable to define text style
 
+var customText = {
+	fontName : 'Brush Script MT',
+	fontSize : 32,
 
+	bold : false,
+	italic : false,
+	color : 'aqua', // The color of the text.
+	auraColor : 'black', // The color of the text outline.
+	opacity : 0.8 // The transparency of the text.
+};
 
 
 
@@ -24,16 +33,7 @@ google.setOnLoadCallback(drawChart);
 // instantiates the pie chart, passes in the data and
 // draws it.
 
-var customText = {
-	fontName : 'Brush Script MT',
-	fontSize : 32,
 
-	bold : false,
-	italic : false,
-	color : 'aqua', // The color of the text.
-	auraColor : 'black', // The color of the text outline.
-	opacity : 0.8 // The transparency of the text.
-};
 
 
 function drawChart() {
