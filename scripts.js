@@ -14,7 +14,7 @@ var customText = {
 	color : 'aqua', // The color of the text.
 	auraColor : 'black', // The color of the text outline.
 	opacity : 0.8 // The transparency of the text.
-};
+}
 
 
 
@@ -45,7 +45,7 @@ function drawChart() {
 	{
 		
 		var oneData = [];
-		oneData.push(defaultDataArray.date);
+		oneData.push((new Date(defaultDataArray[i].date));
 		oneData.push(Number(defaultDataArray[i].value));
 		defaultDataArray.push(oneData);
 	}
